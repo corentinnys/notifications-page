@@ -1,0 +1,19 @@
+body{
+    background-color: #F6FAFD !important;
+}
+section{
+    background-color: #FFFFFF;
+}
+.unread{
+    background-color: #F6FAFD;
+    border-radius: 10px;
+}
+
+.unread_round{
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+}

@@ -7,45 +7,164 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Notifications page</title>
+    <link rel="stylesheet" href="app.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
+    <section class="container p-3">
+        <div class="row">
+            <div class="col-6">
+                <h1>Notifications 3</h1>
+            </div>
+            <div class="col-6 d-flex align-self-center justify-content-end">
+                <span class="allRead">Mark all as read</span>
+            </div>
+            <div class="col-12 ">
+                <div class="d-flex align-items-center  p-3 mb-3 unread">
+                    <img src="/assets/images/avatar-angela-gray.webp"
+                         alt="image-jeremy"
+                         class="rounded-circle me-3"
+                         width="40"
+                         height="40">
 
-  Notifications 3
+                    <div class="d-flex flex-column w-100">
+                        <p class="mb-1">
+                            <strong>Mark Webber </strong>reacted to your recent post My first tournament today!<span class="unread_round"></span>
+                        </p>
 
-  Mark all as read
+                        <div>1m ago</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex align-items-center p-3 mb-3 unread">
+                    <img src="/assets/images/avatar-angela-gray.webp"
+                         alt="image-jeremy"
+                         class="rounded-circle me-3"
+                         width="40"
+                         height="40">
 
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
+                    <div class="d-flex flex-column w-100">
+                        <p class="mb-1">
+                            <strong>Angela Gray </strong> followed you !<span class="unread_round"></span>
+                        </p>
 
-  Angela Gray followed you
-  5m ago
+                        <div>5m ago</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex align-items-center  p-3 mb-3 unread">
+                    <img src="/assets/images/avatar-angela-gray.webp"
+                         alt="image-jeremy"
+                         class="rounded-circle me-3"
+                         width="40"
+                         height="40">
 
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
+                    <div class="d-flex flex-column w-100">
+                        <p class="mb-1 d-flex align-items-center gap-2">
+                            <strong>Jacob Thompson</strong> has joined your group Chess Club !
+                            <span class="unread_round"></span>
+                        </p>
+                        <div>1 day ago</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex align-items-center  p-3 mb-3">
+                    <img src="/assets/images/avatar-angela-gray.webp"
+                         alt="image-jeremy"
+                         class="rounded-circle me-3"
+                         width="40"
+                         height="40">
 
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
+                    <div class="d-flex flex-column w-100">
+                        <p class="mb-1">
+                            <strong>Rizky Hasanuddin </strong>  sent you a private message
+                        </p>
+                        <div>5 days ago</div>
+                        <p>
+                            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+                            I'm already having lots of fun and improving my game.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex align-items-center  p-3 mb-3">
+                    <img src="/assets/images/avatar-angela-gray.webp"
+                         alt="image-jeremy"
+                         class="rounded-circle me-3"
+                         width="40"
+                         height="40">
 
-  Kimberly Smith commented on your picture
-  1 week ago
+                    <div class="d-flex flex-column w-100">
+                        <p class="mb-1">
+                            <strong> Kimberly Smith </strong> commented on your picture
+                        </p>
+                        <div>1 week ago</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex align-items-center  p-3 mb-3">
+                    <img src="/assets/images/avatar-angela-gray.webp"
+                         alt="image-jeremy"
+                         class="rounded-circle me-3"
+                         width="40"
+                         height="40">
 
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
+                    <div class="d-flex flex-column w-100">
+                        <p class="mb-1">
+                            <strong> Nathan Peterson</strong>  reacted to your recent post 5 end-game strategies to increase your win rate
+                        </p>
+                        <div>2 week ago</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex align-items-center  p-3 mb-3">
+                    <img src="/assets/images/avatar-angela-gray.webp"
+                         alt="image-jeremy"
+                         class="rounded-circle me-3"
+                         width="40"
+                         height="40">
 
-  Anna Kim left the group Chess Club
-  2 weeks ago
+                    <div class="d-flex flex-column w-100">
+                        <p class="mb-1">
+                            <strong> Anna Kim</strong> left the group Chess Club
+                        </p>
+                        <div>2 week ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </footer>
+<script>
+
+    const allRead = document.querySelector('.allRead');
+    allRead.addEventListener('click', () => {
+        const unread = document.querySelectorAll('.unread');
+        unread.forEach(item => {
+            item.classList.remove('unread');
+        })
+        const unread_round = document.querySelectorAll('.unread_round');
+        unread_round.forEach(item => {
+            item.remove();
+        })
+    });
+
+</script>
 </body>
 </html>
