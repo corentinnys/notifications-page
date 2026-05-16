@@ -17,3 +17,30 @@ section{
     display: inline-block;
     margin-left: 10px;
 }
+.text-bue{
+    color: #0070F3;
+    font-weight: 700;
+}
+.message-reply{
+    top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.message-img{
+    bottom : 40px;
+}
+.container{
+    width: 40% !important;
+}
+.bold{
+    font-weight: 700;
+}
+.text-gray{
+    color: #8F949A;
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 100% !important;
+    }
+}
